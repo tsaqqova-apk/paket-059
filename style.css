@@ -1,0 +1,326 @@
+@font-face {
+font-family: 'Material Icons';
+font-style: normal;
+font-weight: 400;
+src: url('./fonts/teks-icon.woff2') format('woff2');
+}
+@font-face {
+font-family: 'NotoSansRegular';
+src: url('./fonts/teks-latin.ttf');
+}
+@font-face {
+font-family: 'SakkalMajalla';
+src: url('./fonts/teks-arab.ttf');
+}
+/* Awal Sektor Elemen Online */
+.intionline {
+border:	1px solid #c6ac91;
+padding: 10px;
+border-radius: 4px;
+background-image: url("./images/banner-perpus.png");
+background-position: center;
+background-size: cover;
+}
+.intionline > button {
+animation: pentinge 4s infinite;
+margin: 0px;
+padding: 10px 15px;
+padding-left: 32px;
+color: #ffffff;
+border: none;
+border-radius: 4px;
+overflow: hidden;
+font-size: 14px;
+box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+background-image: url(./images/perpus.svg);
+background-position: 5px center;
+background-repeat: no-repeat;
+background-size: 22px;
+min-height: 36px;
+}
+@keyframes pentinge {
+0% {background-color:#1f8e85;}
+25% {background-color:#244e4d;}
+50% {background-color:#1f8e85;}
+75% {background-color:#244e4d;}
+100% {background-color:#1f8e85;}
+}
+/* Akhir Sektor Elemen Online */
+.kontainer-header-class {
+position: fixed;
+z-index: 1;
+display: flex;
+top: 0px;
+left: 0px;
+height: 40px;
+width: -webkit-fill-available;
+background: #244e4d;
+border: none;
+margin: 0px;
+padding: 0px 15px;
+}
+.judul-header-class {
+font-size: 16px;
+height: 34px;
+width: -webkit-fill-available;
+margin: 0px;
+margin-top: 1px;
+padding-left: 0px;
+padding-right: 0px;
+font-weight: bold;
+color: #c6ac91;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+border: none;
+background: #ffffff00;
+text-align: center;
+pointer-events: none;
+}
+button {
+outline: none;
+font-family: 'NotoSansRegular';
+}
+button:active {
+transform: scale(0.95);
+opacity: 0.8;
+}
+body {
+font-family: 'NotoSansRegular';
+user-select: none;
+}
+.material-icons {
+font-family: 'Material Icons';
+font-weight: normal;
+font-style: normal;
+font-size: 24px;
+line-height: 1;
+letter-spacing: normal;
+text-transform: none;
+display: inline-block;
+white-space: nowrap;
+word-wrap: normal;
+direction: ltr;
+-webkit-tap-highlight-color: #ffffff00;
+-webkit-font-feature-settings: 'liga';
+-webkit-font-smoothing: antialiased;
+}
+.material-icons:active {
+transform: scale(0.95);
+opacity: 0.8;
+}
+.bagianutamaaudio {
+background: #edf2fa;
+position: fixed;
+width: 100%;
+height: -webkit-fill-available;
+top: 0px;
+left: 0px;
+border: none;
+}
+.sektordaftarisiaudio {
+width: -webkit-fill-available;
+padding: 0px;
+border: none;
+background: #faf8ec;
+position: absolute;
+left: 0px;
+top: 40px;
+padding-top: 8px;
+margin: 0px;
+overflow: scroll;
+overflow-x: hidden;
+z-index: 2;
+}
+.tempatelemenonline {
+display: none;
+margin: 0px 8px;
+margin-bottom: 8px;
+border-radius: 4px;
+}
+.sektordaftarisiaudio > ul{
+padding: 8px;
+padding-top: 0px;
+margin: 0px;
+border: none;
+}
+.sektordaftarisiaudio > ul > li {
+list-style: none;
+display: flex;
+cursor: pointer;
+margin-bottom: 0px;
+border: none;
+border-bottom: 1px dashed #c6ac95;
+color: #487e78;
+background: #faf8ec;
+border-radius: 0px;
+padding: 10px;
+font-size: 24px;
+-webkit-tap-highlight-color: #ffffff00;
+}
+.sektordaftarisiaudio > ul > li:active {
+transform: scale(0.95);
+opacity: 0.8;
+}
+.sektordaftarisiaudio > ul > li > div {
+width: 100%;
+padding-right: 15px;
+font-family: 'SakkalMajalla';
+}
+.sektordaftarisiaudio > ul > li > span {
+font-size: 14px;
+color: #c6ac91;
+background: #244e4d;
+padding: 4px 8px;
+}
+.sektordaftarisiaudio > ul > li > div > p {
+margin: 0px;
+color: #999999;
+font-size: 12px;
+}
+ul > li.playing {
+pointer-events: none;
+color: #ffffff;
+background: #1f8e85;
+border: 1px solid #1f8e85;
+}
+ul > li.playing > div > p {
+color: #ffffff;
+opacity: 0.5;
+}
+ul > li.playing > span {
+color: #ffffff00;
+width: 40px;
+background-image: url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23ffffff'%20height='24'%20viewBox='0%20-960%20960%20960'%20width='24'><path%20d='M200-312v-336l240%20168-240%20168Zm320-8v-320h80v320h-80Zm160%200v-320h80v320h-80Z'/></svg>");
+background-position: center;
+background-size: 30px;
+background-repeat: no-repeat;
+}
+ul > li.audio-duration {
+font-size: 12px;
+}
+.sektorpengontrolaudio {
+background: #244e4d;
+padding: 12px 16px;
+position: absolute;
+left: 0px;
+bottom: 0px;
+width: -webkit-fill-available;
+border: none;
+z-index: 2;
+}
+.song-timer {
+border: none;
+color: #5f6267;
+margin: 4px 0px;
+font-size: 12px;
+}
+.song-timer > span {
+font-size: 12px;
+color: #c6ac91;
+}
+.progress-area {
+height: 10px;
+width: -webkit-fill-available;
+background: #1f8e85;
+cursor: pointer;
+margin-bottom: 12px;
+border-radius: 0px;
+-webkit-tap-highlight-color: #ffffff00;
+}
+.progress-area .progress-bar {
+height: inherit;
+width: 0%;
+position: relative;
+border-radius: inherit;
+background: #c6ac91;
+-webkit-tap-highlight-color: #ffffff00;
+}
+.top-bar,
+.progress-area .song-timer, 
+.controls,
+.sektordaftarisiaudio .sektorpengontrolaudio,
+.sektordaftarisiaudio ul li {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.controls {
+border: none;
+}
+.controls > i {
+font-size: 28px;
+user-select: none;
+-webkit-text-fill-color: #c6ac91;
+border-radius: 100%;
+}
+.controls #prev {
+margin-right: -13px;
+}
+.controls #next {
+margin-left: -13px;
+}
+.play-pause {
+display: flex;
+cursor: pointer;
+align-items: center;
+justify-content: center;
+width: 53px;
+height: 53px;
+border-radius: 0px;
+background: #1f8e85;
+-webkit-tap-highlight-color: #ffffff00;
+}
+.play-pause:active {
+transform: scale(0.95);
+opacity: 0.8;
+}
+.play-pause > i {
+text-align: center;
+-webkit-text-fill-color: #ffffff;
+position: absolute;
+border-radius: 100%;
+}
+.song-details {
+text-align: center;
+border: none;
+width: -webkit-fill-available;
+margin: 0px;
+overflow: hidden;
+white-space: nowrap;
+}
+.song-details > p {
+text-overflow: ellipsis;
+background: #ffffff00;
+overflow: hidden;
+margin: 0px;
+padding: 0px;
+border: none;
+}
+.name {
+font-size: 22px;
+color: #c6ac91;
+font-weight: bold;
+font-family: 'SakkalMajalla';
+}
+/* Untuk Scroll Bar */
+@media only screen and (min-width: 600px) {
+	::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	}
+	::-webkit-scrollbar-track {
+	background: #ffffff;
+	}
+	::-webkit-scrollbar-thumb {
+	background: #1f8e85;
+	}
+}
+.tombol-gdpr {
+width: -webkit-fill-available;
+margin: 20px 8px;
+padding: 10px;
+background: #f2ead5;
+color: #333333;
+border: 1px solid #c0bb9e;
+}
